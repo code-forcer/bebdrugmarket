@@ -19,7 +19,7 @@ export default function Register() {
     setError(''); // Reset error message
 
     try {
-      await axios.post('/api/auth/register', form);
+      await axios.post('https://b2bdrugstore.netlify.app/api/auth/register', form);
       router.push('/');
     } catch (error) {
       setError(error.response.data.message);
