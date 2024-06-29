@@ -4,7 +4,7 @@ import Cors from 'cors';
 // Initializing the cors middleware
 const cors = Cors({
   methods: ['GET', 'HEAD', 'POST', 'PUT', 'DELETE'],
-  origin: '*', // Allow all origins
+  origin: 'https://bebdrugstore.netlify.app'
 });
 
 function runMiddleware(req, res, fn) {
