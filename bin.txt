@@ -1,0 +1,61 @@
+# rfc to call react auto completions
+
+#Index
+ <Container>
+          <Row>
+            <Col>
+              {/* Hero section */}
+              <h1>Hi i am header</h1>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <ProductList products={products} />
+            </Col>
+          </Row>
+        </Container>
+#Registerpage:
+<Container>
+      <h2>Register</h2>
+      <Form onSubmit={handleSubmit}>
+        <Form.Group controlId="formName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control
+            type="text"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="formEmail">
+          <Form.Label>Email</Form.Label>
+          <Form.Control
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="formPassword">
+          <Form.Label>Password</Form.Label>
+          <Form.Control
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+        </Form.Group>
+
+        <Form.Group controlId="formRole">
+          <Form.Label>Role</Form.Label>
+          <Form.Control as="select" name="role" value={formData.role} onChange={handleChange}>
+            <option value="pharmacist">Pharmacist</option>
+            <option value="supplier">Supplier</option>
+          </Form.Control>
+        </Form.Group>
+
+        <Button variant="primary" type="submit">Register</Button>
+      </Form>
+    </Container>
