@@ -18,7 +18,7 @@ export default function Login() {
     e.preventDefault();
     setError(''); // Reset error message
     try {
-      const { data } = await axios.post('https://b2bdrugstore.netlify.app/api/auth/login', form);
+      const { data } = await axios.post('/api/auth/login', form);
       localStorage.setItem('token', data.token);
       router.push('/dashboard');
     } catch (error) {
