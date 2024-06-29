@@ -70,11 +70,3 @@ export default function Login() {
     </div>
   );
 }
-
-// Fetch products from the API
-export async function getServerSideProps() {
-  const res = await fetch('https://b2bdrugstore.netlify.app/api/products');
-  const products = await res.json();
-
-  return { props: { products } };
-}
